@@ -2,7 +2,7 @@
 
 Este projeto nasceu de um problema que conheço na operação: a informação existe, mas costuma ficar espalhada entre documentos, páginas, anotações e históricos. Antes de resolver um incidente ou responder uma dúvida, parte do tempo é gasta procurando o material certo e organizando o contexto.
 
-A ideia do MVP foi criar um caminho simples para consultar fontes controladas, organizar o conteúdo e gerar uma resposta útil para a operação. O objetivo não era construir uma plataforma completa logo no início. Eu queria validar a arquitetura, entender os limites e manter o consumo previsível.
+A ideia foi criar um caminho simples para consultar fontes controladas, organizar o conteúdo e gerar uma resposta útil para a operação. Não queríamos construir uma plataforma completa logo no início; o objetivo era validar a arquitetura, entender os limites e manter o consumo previsível.
 
 ## O que o MVP buscava resolver
 
@@ -15,7 +15,7 @@ A ideia do MVP foi criar um caminho simples para consultar fontes controladas, o
 
 ## Como organizei a solução
 
-Separei o fluxo em três partes:
+Organizamos o fluxo em três partes:
 
 1. **Origem dos dados:** documentos e conteúdos textuais escolhidos para a consulta.
 2. **Processamento:** extração e normalização, triagem do conteúdo com o Gemini e preparação do contexto.
@@ -68,9 +68,7 @@ Por isso, o NotebookLM ficou como ferramenta complementar para comparação manu
 
 O MVP saiu do desenho e foi aplicado no Google Cloud. A base de dados organizada no Google Drive ficou funcional e pôde ser usada como fonte do fluxo de consulta e análise. Com isso, conseguimos validar na prática a separação entre origem dos dados, triagem com o Gemini, consumo do contexto pelo GPT e saída operacional.
 
-O trabalho também definiu o recorte do MVP, a arquitetura e os limites técnicos. Ele serviu para ligar minha experiência em infraestrutura e operação ao caminho que estou construindo em engenharia de IA.
-
-Esse MVP também foi construído em colaboração. Eu cuidei mais de infraestrutura, cloud, SRE, automação, observabilidade e controle de custo. Edmundo Neto trouxe a visão de desenvolvimento, backend e mobile, junto com boas práticas de código, documentação e experiência de produto. Essa troca ajudou a pensar no que seria viável manter no uso real, além de validar a ideia no papel.
+O trabalho também definiu o recorte do MVP, a arquitetura e os limites técnicos. Construímos esse MVP em colaboração. Edmundo Neto contribuiu com a visão de desenvolvimento, backend e mobile, além de boas práticas de código, documentação e experiência de produto. Eu entrei principalmente com infraestrutura, cloud, SRE, automação, observabilidade e controle de custo. Essa troca ajudou a pensar no que seria viável desenvolver e manter no uso real, além de validar a ideia no papel.
 
 Este repositório documenta o raciocínio e as decisões. Ele não publica dados internos, credenciais, bases privadas ou conteúdo usado apenas durante experimentos.
 
