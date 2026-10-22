@@ -1,5 +1,7 @@
 # MVP de automação com LLM
 
+![Capa do projeto: MVP de automação com LLM](https://raw.githubusercontent.com/soteropolitano/mvp-automacao-llm/main/assets/linkedin-cover.jpg)
+
 Este projeto nasceu de um problema que conheço na operação: a informação existe, mas costuma ficar espalhada entre documentos, páginas, anotações e históricos. Antes de resolver um incidente ou responder uma dúvida, parte do tempo é gasta procurando o material certo e organizando o contexto.
 
 A ideia foi criar um caminho simples para consultar fontes controladas, organizar o conteúdo e gerar uma resposta útil para a operação. Não queríamos construir uma plataforma completa logo no início; o objetivo era validar a arquitetura, entender os limites e manter o consumo previsível.
