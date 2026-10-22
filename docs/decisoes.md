@@ -32,6 +32,14 @@ Este arquivo registra as escolhas que mudaram o formato do MVP. A intenção é 
 
 **Motivo:** essa divisão permite testar, substituir e controlar cada parte. Também reduz o risco de perder o projeto quando um serviço muda.
 
+## Usar o Google Drive como base inicial
+
+**Decisão:** organizar a base de dados do MVP no Google Drive e acessá-la como origem do fluxo.
+
+**Motivo:** o Drive já atendia à organização das fontes e permitia validar a integração sem criar outra camada de armazenamento antes de provar o funcionamento.
+
+**Resultado:** a base ficou funcional e foi usada pelo MVP aplicado no Google Cloud.
+
 ## Priorizar respostas verificáveis
 
 **Decisão:** uma resposta precisa apontar o material que a sustenta.
