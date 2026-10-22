@@ -40,6 +40,14 @@ Este arquivo registra as escolhas que mudaram o formato do MVP. A intenção é 
 
 **Resultado:** a base ficou funcional e foi usada pelo MVP aplicado no Google Cloud.
 
+## Separar as funções do Gemini e do GPT
+
+**Decisão:** usar o Gemini para a triagem e o GPT para consumir o contexto preparado e gerar a resposta.
+
+**Motivo:** triagem e consumo final são etapas diferentes. Separar as funções deixou o fluxo mais fácil de entender, testar e ajustar, além de evitar o envio indiscriminado de toda a base para a geração final.
+
+**Resultado:** o conteúdo do Google Drive passou primeiro pela triagem do Gemini; o GPT recebeu o contexto selecionado para produzir a saída operacional.
+
 ## Priorizar respostas verificáveis
 
 **Decisão:** uma resposta precisa apontar o material que a sustenta.
