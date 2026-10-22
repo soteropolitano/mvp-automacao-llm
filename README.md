@@ -68,7 +68,7 @@ Por isso, o NotebookLM ficou como ferramenta complementar para comparação manu
 
 O MVP saiu do desenho e foi aplicado no Google Cloud. A base de dados organizada no Google Drive ficou funcional e pôde ser usada como fonte do fluxo de consulta e análise. Com isso, conseguimos validar na prática a separação entre origem dos dados, triagem com o Gemini, consumo do contexto pelo GPT e saída operacional.
 
-O trabalho também definiu o recorte do MVP, a arquitetura e os limites técnicos. Construímos esse MVP em colaboração. Edmundo Neto contribuiu com a visão de desenvolvimento, backend e mobile, além de boas práticas de código, documentação e experiência de produto. Eu entrei principalmente com infraestrutura, cloud, SRE, automação, observabilidade e controle de custo. Essa troca ajudou a pensar no que seria viável desenvolver e manter no uso real, além de validar a ideia no papel.
+O trabalho também definiu o recorte do MVP, a arquitetura e os limites técnicos. Construímos esse MVP em colaboração. [Edmundo Neto](https://github.com/emal0n) contribuiu com a visão de desenvolvimento, backend e mobile, além de boas práticas de código, documentação e experiência de produto. Eu entrei principalmente com infraestrutura, cloud, SRE, automação, observabilidade e controle de custo. Essa troca ajudou a pensar no que seria viável desenvolver e manter no uso real, além de validar a ideia no papel.
 
 Este repositório documenta o raciocínio e as decisões. Ele não publica dados internos, credenciais, bases privadas ou conteúdo usado apenas durante experimentos.
 
