@@ -15,6 +15,8 @@ As fontes entram por adaptadores. Nesta fase, a prioridade é conteúdo textual 
 - permissão de uso;
 - referência para voltar ao material original.
 
+No MVP aplicado, a base organizada no Google Drive funcionou como origem dos dados. Essa integração validou o acesso às fontes sem misturar a estrutura do Drive com as etapas de processamento e geração.
+
 ## Preparação
 
 O conteúdo é extraído e normalizado antes da busca. Cabeçalhos, espaços e caracteres precisam ser tratados sem apagar a estrutura que ajuda a interpretar o documento.
@@ -55,4 +57,8 @@ Os registros necessários são operacionais e não devem guardar conteúdo sens�
 - erros por origem;
 - perguntas sem resposta;
 - avaliação humana da utilidade.
+
+## Aplicação no Google Cloud
+
+O fluxo foi aplicado no Google Cloud, mantendo a base do Drive como uma camada separada. Essa etapa mostrou que a arquitetura não ficou apenas no diagrama: a origem dos dados funcionou, o processamento pôde consumir o conteúdo e a saída operacional foi validada no ambiente de nuvem.
 
