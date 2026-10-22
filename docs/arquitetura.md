@@ -23,15 +23,19 @@ O conteúdo é extraído e normalizado antes da busca. Cabeçalhos, espaços e c
 
 Depois, o texto é dividido em partes menores. Cada parte herda os metadados da fonte. O tamanho deve equilibrar contexto e precisão: partes grandes trazem ruído; partes pequenas podem separar uma explicação do trecho que dá sentido a ela.
 
+## Triagem com o Gemini
+
+O Gemini foi usado para triar e organizar o conteúdo vindo da base no Google Drive. Seu papel foi preparar o material que seguiria no fluxo, reduzindo o volume e separando o que era relevante antes do consumo final.
+
 ## Recuperação
 
 A pergunta não segue diretamente para o modelo. Primeiro, o sistema procura os trechos mais relevantes. Essa busca pode combinar termos exatos, filtros por metadados e similaridade semântica.
 
 O resultado da recuperação precisa ser limitado. Enviar documentos inteiros em toda pergunta aumenta custo e pode piorar a resposta.
 
-## Geração
+## Consumo e geração com o GPT
 
-O modelo recebe a pergunta, os trechos selecionados e regras claras:
+O GPT recebe a pergunta, os trechos selecionados depois da triagem e regras claras:
 
 - usar apenas o contexto fornecido;
 - citar ou identificar as fontes;
@@ -60,5 +64,5 @@ Os registros necessários são operacionais e não devem guardar conteúdo sens�
 
 ## Aplicação no Google Cloud
 
-O fluxo foi aplicado no Google Cloud, mantendo a base do Drive como uma camada separada. Essa etapa mostrou que a arquitetura não ficou apenas no diagrama: a origem dos dados funcionou, o processamento pôde consumir o conteúdo e a saída operacional foi validada no ambiente de nuvem.
+O fluxo foi aplicado no Google Cloud, mantendo a base do Drive como uma camada separada. Essa etapa mostrou que a arquitetura não ficou apenas no diagrama: a origem dos dados funcionou, o Gemini realizou a triagem, o GPT consumiu o contexto preparado e a saída operacional foi validada no ambiente de nuvem.
 
