@@ -70,6 +70,8 @@ O MVP saiu do desenho e foi aplicado no Google Cloud. A base de dados organizada
 
 O trabalho também definiu o recorte do MVP, a arquitetura e os limites técnicos. Ele serviu para ligar minha experiência em infraestrutura e operação ao caminho que estou construindo em engenharia de IA.
 
+Esse MVP também foi construído em colaboração. Eu cuidei mais de infraestrutura, cloud, SRE, automação, observabilidade e controle de custo. Edmundo Neto trouxe a visão de desenvolvimento, backend e mobile, junto com boas práticas de código, documentação e experiência de produto. Essa troca ajudou a pensar no que seria viável manter no uso real, além de validar a ideia no papel.
+
 Este repositório documenta o raciocínio e as decisões. Ele não publica dados internos, credenciais, bases privadas ou conteúdo usado apenas durante experimentos.
 
 ## Documentação
