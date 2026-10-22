@@ -62,9 +62,11 @@ Por isso, o NotebookLM ficou como ferramenta complementar para comparação manu
 - limitar tamanho, quantidade de chamadas e custo por execução;
 - registrar erros e decisões para aprender com os testes.
 
-## Estado atual
+## O que conseguimos validar
 
-O trabalho realizado até aqui definiu o problema, o recorte do MVP, a arquitetura e os limites técnicos. Também serviu para ligar minha experiência em infraestrutura e operação ao caminho que estou construindo em engenharia de IA.
+O MVP saiu do desenho e foi aplicado no Google Cloud. A base de dados organizada no Google Drive ficou funcional e pôde ser usada como fonte do fluxo de consulta e análise. Com isso, conseguimos validar na prática a separação entre origem dos dados, processamento pelo modelo e saída operacional.
+
+O trabalho também definiu o recorte do MVP, a arquitetura e os limites técnicos. Ele serviu para ligar minha experiência em infraestrutura e operação ao caminho que estou construindo em engenharia de IA.
 
 Este repositório documenta o raciocínio e as decisões. Ele não publica dados internos, credenciais, bases privadas ou conteúdo usado apenas durante experimentos.
 
@@ -76,11 +78,11 @@ Este repositório documenta o raciocínio e as decisões. Ele não publica dados
 - [Próximos passos](docs/proximos-passos.md)
 - [Segurança e privacidade](SECURITY.md)
 
-## Tecnologias avaliadas
+## Tecnologias e serviços usados
 
-O desenho permite usar Python para ingestão e orquestração, uma camada de armazenamento para documentos e metadados, busca textual ou vetorial e um modelo acessado por API. A escolha final de cada componente deve vir depois dos testes de qualidade, custo e manutenção.
+O MVP foi aplicado no Google Cloud e utilizou uma base organizada no Google Drive. O desenho manteve uma camada para ingestão e orquestração, preparação dos documentos e metadados, recuperação do contexto e acesso ao modelo.
 
-Não defini uma tecnologia como obrigatória apenas para deixar o diagrama mais completo. O valor do MVP está em validar o fluxo e os critérios, não em acumular ferramentas.
+O valor do MVP ficou na validação do fluxo completo e dos critérios de resposta. As tecnologias foram usadas para resolver cada parte do problema, sem transformar a arquitetura numa lista de ferramentas.
 
 ## Resultado esperado
 
