@@ -18,21 +18,23 @@ A ideia do MVP foi criar um caminho simples para consultar fontes controladas, o
 Separei o fluxo em três partes:
 
 1. **Origem dos dados:** documentos e conteúdos textuais escolhidos para a consulta.
-2. **Processamento:** extração, normalização, divisão do conteúdo, recuperação do contexto e chamada ao modelo.
+2. **Processamento:** extração e normalização, triagem do conteúdo com o Gemini e preparação do contexto.
 3. **Saída operacional:** resposta organizada, referências utilizadas e material que pode voltar para a documentação.
+
+Os modelos tiveram funções diferentes. O **Gemini foi usado para triar e organizar o conteúdo**. O **GPT consumiu o contexto selecionado para produzir a resposta e a saída operacional**. Essa separação evitou tratar toda a base da mesma forma e deixou mais claro o papel de cada etapa.
 
 Essa separação permite trocar uma fonte ou um modelo sem refazer todo o projeto. Também facilita identificar onde uma resposta falhou: na origem, na preparação do conteúdo, na busca ou na geração.
 
 ```mermaid
 flowchart LR
-    A[Fontes controladas] --> B[Extração e normalização]
-    B --> C[Divisão e metadados]
-    C --> D[Catálogo ou índice]
+    A[Base no Google Drive] --> B[Extração e normalização]
+    B --> C[Gemini: triagem e organização]
+    C --> D[Contexto selecionado]
     E[Pergunta] --> F[Recuperação do contexto]
     D --> F
-    F --> G[LLM]
+    F --> G[GPT: consumo e geração]
     G --> H[Resposta com referências]
-    H --> I[Triagem e documentação]
+    H --> I[Saída operacional e documentação]
 ```
 
 ## O que decidimos não fazer nesta etapa
@@ -64,7 +66,7 @@ Por isso, o NotebookLM ficou como ferramenta complementar para comparação manu
 
 ## O que conseguimos validar
 
-O MVP saiu do desenho e foi aplicado no Google Cloud. A base de dados organizada no Google Drive ficou funcional e pôde ser usada como fonte do fluxo de consulta e análise. Com isso, conseguimos validar na prática a separação entre origem dos dados, processamento pelo modelo e saída operacional.
+O MVP saiu do desenho e foi aplicado no Google Cloud. A base de dados organizada no Google Drive ficou funcional e pôde ser usada como fonte do fluxo de consulta e análise. Com isso, conseguimos validar na prática a separação entre origem dos dados, triagem com o Gemini, consumo do contexto pelo GPT e saída operacional.
 
 O trabalho também definiu o recorte do MVP, a arquitetura e os limites técnicos. Ele serviu para ligar minha experiência em infraestrutura e operação ao caminho que estou construindo em engenharia de IA.
 
@@ -80,7 +82,7 @@ Este repositório documenta o raciocínio e as decisões. Ele não publica dados
 
 ## Tecnologias e serviços usados
 
-O MVP foi aplicado no Google Cloud e utilizou uma base organizada no Google Drive. O desenho manteve uma camada para ingestão e orquestração, preparação dos documentos e metadados, recuperação do contexto e acesso ao modelo.
+O MVP foi aplicado no Google Cloud e utilizou uma base organizada no Google Drive. O desenho manteve uma camada para ingestão e orquestração, preparação dos documentos e metadados, triagem com o Gemini, recuperação do contexto e consumo pelo GPT.
 
 O valor do MVP ficou na validação do fluxo completo e dos critérios de resposta. As tecnologias foram usadas para resolver cada parte do problema, sem transformar a arquitetura numa lista de ferramentas.
 
