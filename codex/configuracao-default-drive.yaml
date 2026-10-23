@@ -1,0 +1,41 @@
+# Cópia histórica do perfil default do Drive (25/04/2026).
+# Os nomes dos modelos podem estar desatualizados; confirme antes de reutilizar.
+
+perfil:
+  nome: "default"
+  descricao: "Perfil genérico para estudos diversos"
+  idioma_saida: "pt-BR"
+
+objetivo:
+  principal: "Transformar conteúdo bruto em material de estudo claro, útil e revisável"
+  nivel: "adaptar ao conteúdo"
+  contexto: "estudos diversos"
+
+foco:
+  incluir:
+    - conceitos principais
+    - definições importantes
+    - exemplos práticos
+    - termos técnicos
+    - dúvidas comuns
+    - pontos que merecem revisão
+  ignorar_por_enquanto:
+    - propaganda
+    - enrolação
+    - repetições
+    - comentários irrelevantes
+
+saida:
+  gerar_resumo: true
+  gerar_anki_csv: true
+  gerar_simulado: true
+  gerar_checklist: true
+  gerar_glossario: true
+
+modelos:
+  gemini: "gemini-2.5-flash"
+  openai: "gpt-5.5"
+
+custos:
+  estrategia: "baixo_custo"
+  profundidade_padrao: "media"
