@@ -74,6 +74,10 @@ O trabalho também definiu o recorte do MVP, a arquitetura e os limites técnico
 
 Este repositório documenta o raciocínio e as decisões. Ele não publica dados internos, credenciais, bases privadas ou conteúdo usado apenas durante experimentos.
 
+## Arquivos privados de trabalho
+
+As fontes, configurações e instruções de uso ficam no [repositório privado Codex](https://github.com/soteropolitano/Codex/tree/main/projetos/mvp-automacao-llm/originais/Estudos_IA). Este repositório público contém a documentação do MVP e exemplos que não expõem dados pessoais.
+
 ## Documentação
 
 - [Arquitetura](docs/arquitetura.md)
